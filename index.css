@@ -1,0 +1,236 @@
+html, body { 
+    --color-orange: #FF6100;
+
+    --color-gold: #EDB46C; 
+  
+    --color-gray: #c5d4d6; 
+    --color-black:black; 
+    --color-gold-black: #10120D; 
+    --color-gold-gray: #21241a;
+    --color-gold-gray2: #55553e;
+    --color-white: #F7F8F8;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    padding-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    height: 100vh;
+    background-image: url("bg3.svg");
+    background-repeat: repeat;
+    background-size: 16%;
+    background-color: var(--color-gold-black);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+   width: 800px;
+   margin: 0 auto;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    margin: 0 auto;
+    /* border: 10px solid var(--color-gold); */
+    background-color: var(--color-gold);
+    box-shadow:
+    0 0 0 8px var(--color-gold),
+    0 0 0 16px var(--color-black);
+    display: flex;
+   
+}
+
+#message {
+    text-shadow: -2px 2px 0 black,
+                -3px 3px 0 black;
+}
+
+h1 {
+letter-spacing: 3px;
+font-size: 1.75em;
+
+padding-top: 0px;
+margin: 0px 0px 0px 0px;
+
+}
+
+.title {
+    padding-top: 30px;
+    font-size: 2.5em;
+    letter-spacing: 5px;
+}
+
+.dice-image {
+background-color: var(--color-white);
+width: 120px;
+height: 120px;
+border-radius: 5px;
+align-self: center;
+background-image: url("dice1.svg");
+background-size: 100%; 
+}
+
+/* .container::after{
+    width: 800px;
+    height: 500px;
+    content: '';
+    position: relative;    
+    margin: 0 auto;
+    border: 50px solid var(--color-black);
+   z-index: -1;
+   
+} */
+.message-buttons {
+    width: 800px;
+    height: 500px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+
+.container-1 {
+  
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.container-2 {
+    
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.players {
+    width: 100%;
+    display: flex;
+    z-index: 1;
+}
+
+.player {
+    align-self: center;
+    justify-self: center ;
+   
+}
+.dice {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-black);
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button {
+    color: #fff;
+    padding: 15px 20px 15px 20px;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-black);
+    letter-spacing: 3px;
+
+}
+
+button:hover {
+    color: var(--color-gold);
+    
+}
+
+button:focus {
+    outline: none;
+  
+}
+
+#rollBtn {
+    
+}
+
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow:
+    0 0 0 6px var(--color-orange),
+    0 0 0 12px var(--color-black);
+    /* box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75); */
+}
+
+.active2 {
+    background-color: var(--color-orange-highlight);
+}
+
+.active2 {
+    background-color: var(--color-orange);
+}
+
+.dice-image1 {
+    background-image: url("dice1.svg");
+    background-size: 100%; 
+}
+.dice-image2 {
+    background-image: url("dice2.svg");
+    background-size: 100%; 
+}
+.dice-image3 {
+    background-image: url("dice3.svg");
+    background-size: 100%; 
+}
+.dice-image4 {
+    background-image: url("dice4.svg");
+    background-size: 100%; 
+}
+.dice-image5 {
+    background-image: url("dice5.svg");
+    background-size: 100%; 
+}
+.dice-image6 {
+    background-image: url("dice6.svg");
+    background-size: 100%; 
+}
+
+.instructions {
+    margin-top:24px;
+    background-color: black;
+    box-shadow:
+    0 0 0 8px var(--color-black),
+    0 0 0 16px var(--color-black);
+    text-align: center;
+
+}
+
+.instructions p{
+    margin:0px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: var(--color-gold-gray2);
+}
