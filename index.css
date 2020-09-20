@@ -247,7 +247,8 @@ button:focus {
    
    .wrapper {
        flex-direction: row;
-       min-width: 500px;
+       min-width: 450px;
+       
    }
 
    .message-buttons {
