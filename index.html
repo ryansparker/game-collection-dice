@@ -7,17 +7,27 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="assets/favicon.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <title>Dice Game</title>
 </head>
 
 <body>
-    
-    <div class="wrapper">
+    <div id="overlay">
+        <div id="modal">
+            <span onclick="document.getElementById('YourModalBox').style.display='none'" class="close-button topright" id="close-modal">&times;</span>
+            <h2>INSTRUCTIONS</h2>
+            <p>For two players. <br><br>
+                Roll the die, and the first player to reach 20 points, wins!</p>
+        </div>
+    </div>
 
+    <div id="open-modal" class="about"></div>
+    
+    <div class="wrap-all">
+        <div id="logo"><img src="assets/logo1.svg"/></div>
+        <div id="logo-player1"><img src="assets/player1-wins.svg"/></div>
+        <div id="logo-player2"><img src="assets/player2-wins.svg"/></div>
+    <div class="wrapper">
         <div class="message-buttons">
-                <div class="message">
-                    <h1 data-shadow='DICE GAME' class="title" id="message">DICE <span class="break"><br></span>GAME</h1>
-                    
-                </div>
                 <div class="dice-image"> </div>
                 <div class="buttons">
                     <button class="rollBtn" id="rollBtn">ROLL</button>
@@ -31,31 +41,30 @@
 
                 <div class="container-1 active2">
                     <div class="player" id="player1">
-                        <h1>PLAYER 1</h1>
-                        <h1>SCORE:
+                        <h1 id="player1up" class="shadow">PLAYER 1</h1>
+                        <div id="player1Dice" class="dice active">-</div>
+                        <h1 class="score">SCORE:
                             <span id="player1Scoreboard">0</span>
                         </h1>
-                        <div id="player1Dice" class="dice active">-</div>
                     </div>
                 </div>
 
-                <div class="container-2">
+                <div class="container-2 inactive">
                     <div class="player" id="player2">
-                        <h1>PLAYER 2</h1>
-                        <h1>SCORE:
+                        <h1 id="player2up">PLAYER 2</h1>
+                        <div id="player2Dice" class="dice">-</div>
+                        <h1 class="score">SCORE:
                             <span id="player2Scoreboard">0</span>
                         </h1>
-                        <div id="player2Dice" class="dice">-</div>
                     </div>
                 </div>
 
             </div>
             
         </div>
-
-        <div class="instructions"><p>Roll the die, and the first player to reach 20 points, wins!</p></div>
     
     </div>
+</div>
     <script src="index.js"></script>
 </body>
 
